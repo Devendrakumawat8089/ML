@@ -1,0 +1,38 @@
+Install uv in your system 
+
+create a new folder ----> open vs code in it --->  open the terminal --->> 
+
+uv init deltro 
+
+exit the vs code and oopen vs code from deltro folder . 
+
+open the terminal and write 
+
+uv venv 
+
+.venv\Scripts\activate 
+
+
+create a new 'requirements.txt' file in which we will store our all packages . 
+
+create a model_training.py file in which are training our model . so for thid open terminal and write 
+
+python model_training.py 
+
+
+create an app.py file in which we will create url and function for flask application . 
+for run this , open terminal and write 
+
+python app.py 
+
+
+Now we will see http://127.0.0.1:5000 this link in ouur terminal 
+
+
+Now go to vs code extension ---> postman ---> Authentication of postman ----> 
+
+Create a new block ---> method['Post'] , paste your  http://127.0.0.1:5000/predict ,
+
+click on 'body' ---> click on 'raw' ---> in body you have to ask question like this. 
+
+{"input" : [30,5000]}  ----> click send and we will see our result and response . 
