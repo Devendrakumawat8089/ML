@@ -180,11 +180,11 @@ class AutoML:
         return best_model, best_score
 
 
-df = pd.read_csv("insurance.csv")
+df = pd.read_csv("Churn_Modelling.csv")
 
 automl = AutoML(
     df,
-    "charges"
+    "Exited"
 )
 
 best_model, score = automl.train()
